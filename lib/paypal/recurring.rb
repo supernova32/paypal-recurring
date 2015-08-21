@@ -98,7 +98,7 @@ module PayPal
     # Return PayPal's API version.
     #
     def self.api_version
-      "104.0"
+      "124.0"
     end
 
     # Return site endpoint based on current environment.
