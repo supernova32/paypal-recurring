@@ -72,7 +72,8 @@ module PayPal
         ).merge(
           :payment_action => "Authorization",
           :no_shipping => 1,
-          :L_BILLINGTYPE0 => "RecurringPayments"
+          :L_BILLINGTYPE0 => "RecurringPayments",
+          :L_BILLINGAGREEMENTDESCRIPTION0 => 'Test Sub'
         )
 
         request.run(:checkout, params)
